@@ -18,11 +18,13 @@ function signup() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
   var telephone = document.getElementById("telephone").value;
-  function validatePassword() {
-    var password = document.getElementById("password").value;
-    var confirmpassword = document.getElementById("confirmpassword").value;
-    if (password != confirmpassword) {
-      alert("Passwords do not match");
-    }
+  validatePassword()
+  alert("Registration successful! \nName: " + name + "\nPlace: " + place + "\nDate of Birth: " + month + "/" + year + "\nEmail: " + email + "\nPassword: " + password + "\nTelephone: " + telephone);
+}
+function validatePassword() {
+  var password = document.getElementById("password").value;
+  var confirmpassword = document.getElementById("confirmpassword").value;
+  if (password != confirmpassword) {
+    alert("Passwords do not match");
   }
 }

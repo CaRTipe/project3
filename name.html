@@ -60,24 +60,29 @@
         </div>
         <div class="thirdrow">
 
-          <div class="email">
-            <p style="font-weight: bold;">Email</p>
-            <input type="email" id="email" placeholder="johndoe@gmail.com" required />
+          <div class="emails">
+            <div class="email" style="margin-bottom: 20px;">
+              <p style="font-weight: bold;">Email</p>
+              <input type="email" id="email" placeholder="johndoe@gmail.com" required />
+            </div>
+            <div class="number">
+              <p style="font-weight: bold;">Phone Number</p>
+              <input type="tel" id="telephone" placeholder="Phone Number" required />
+            </div>
           </div>
-
-          <div class="password">
-            <p style="font-weight: bold;">Password</p>
-            <input type="password" id="password" placeholder="*******" required />
+          <div class="passwords">
+            <div class="password">
+              <p style="font-weight: bold;">Password</p>
+              <input type="password" id="password" placeholder="*******" required />
+            </div>
+            <div class="password">
+              <p style="font-weight: bold;"> Confirm Password</p>
+              <input type="password" id="confirmpassword" placeholder="*******" required />
+            </div>
           </div>
-          <div class="password">
-            <p style="font-weight: bold;"> Confirm Password</p>
-            <input type="password" id="confirmpassword" placeholder="*******" required />
-          </div>
+          
         </div>
-        <div class="number">
-            <p style="font-weight: bold;">Phone Number</p>
-            <input type="tel" id="telephone" placeholder="Phone Number" required />
-          </div>
+        
 
         <div class="photo">
           <p style="font-weight: bold;">Upload your photo</p>
@@ -96,7 +101,7 @@
         </div>
 
         <div class="button">
-          <button style="width: 800px; height: 40px" onclick="alert('Registration Successful')"> 
+          <button style="width: 800px; height: 40px" onclick="signup()"> 
             <a href="">Submit</a>
           </button>
 
@@ -105,6 +110,8 @@
       </form>
       <div class="kid">
       </div>
+
     </div>
+    <script src="./name.js"></script>
   </body>
 </html>
