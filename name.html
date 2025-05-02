@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name</title>
+    <link rel="stylesheet" href="./name.css" />
+  </head>
+  <body>
+    <div class="reg">
+      <h1
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+            sans-serif;
+        "
+      >
+        <img src="./assets/images/user.png" alt="" width="50px" />
+        REGISTRATION
+      </h1>
+    </div>
+    <div class="container">
+      <form enctype="multipart/form-data" method="get">
+        <div class="firstrow">
+          <div class="name">
+            <p style="font-weight: bold;">Name</p>
+            <input type="text" placeholder="Enter name..." />
+          </div>
+          <div class="place">
+            <p style="font-weight: bold;">Place</p>
+            <input type="text" placeholder="Hometown" />
+          </div>
+        </div>
+        <div class="secondrow">
+          <div class="month">
+            <p style="font-weight: bold;">Month of Birth</p>
+            <select>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </div>
+
+          <div class="year">
+            <p style="font-weight: bold;">Year of Birth</p>
+            <input type="number" placeholder="e.g 1999" required />
+          </div>
+        </div>
+        <div class="thirdrow">
+
+          <div class="email">
+            <p style="font-weight: bold;">Email</p>
+            <input type="email" placeholder="johndoe@gmail.com" required />
+          </div>
+
+          <div class="password">
+            <p style="font-weight: bold;">Password</p>
+            <input type="password" placeholder="*******" required />
+          </div>
+        </div>
+        <div class="number">
+            <p style="font-weight: bold;">Phone Number</p>
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+
+        <div class="photo">
+          <p style="font-weight: bold;">Upload your photo</p>
+          <input type="file" accept=".jpg,.png,.gif " id="upload" required />
+          <label for="upload"> Upload file</label>
+        </div>
+
+        <div class="gender">
+          <div>
+            <p style="font-weight: bold;">Gender</p>
+          </div>
+          <div>
+            <input type="radio" name="gender" value="Male" />Male
+            <input type="radio" name="gender" value="Female" />Female
+          </div>
+        </div>
+
+        <div class="button">
+          <button style="width: 800px; height: 40px">
+            <a href="">Submit</a>
+          </button>
+
+          </button>
+        </div>
+      </form>
+      <div class="kid">
+      </div>
+    </div>
+  </body>
+</html>
